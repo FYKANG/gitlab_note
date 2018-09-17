@@ -54,3 +54,17 @@
     * 访问刚刚在gitlab.rb中配置的external_url地址
     * 第一次访问需要进行root密码初始化，初始化好密码后进入的首页如下图
     ![gitlabHome](https://github.com/FYKANG/gitlab_note/raw/master/img/gitlabHome.png)
+
+## 其他配置以及常用命令
+
+1. 配置
+    * 时区设置
+        ```linux
+        docker exec -it gitlab-ce bash #进入容器
+        dpkg-reconfigure tzdata #选择时区
+        ```
+
+2. 常用命令
+    ```linux
+    gitlab-ctl tail #查看日志
+    ```
